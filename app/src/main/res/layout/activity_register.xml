@@ -7,26 +7,161 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/editText7"
+        android:layout_width="413dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="216dp"
+        android:background="@drawable/circle"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have  account?  "
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="696dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="696dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="664dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/textInputEditText3"
+        android:layout_width="272dp"
+        android:layout_height="47dp"
+        android:background="@drawable/circle"
+        android:ellipsize="end"
+        android:hint="Full Name"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/textInputEditText4"
+        android:layout_width="272dp"
+        android:layout_height="47dp"
+        android:background="@drawable/circle"
+        android:ellipsize="end"
+        android:hint="Phone Number"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/textInputEditText5"
+        android:layout_width="272dp"
+        android:layout_height="47dp"
+        android:background="@drawable/circle"
+        android:ellipsize="end"
+        android:hint="Password"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/textInputEditText6"
+        android:layout_width="272dp"
+        android:layout_height="47dp"
+        android:background="@drawable/circle"
+        android:ellipsize="end"
+        android:hint="Confirm Password"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/textInputEditText7"
+        android:layout_width="272dp"
+        android:layout_height="47dp"
+        android:background="@drawable/circle"
+        android:ellipsize="end"
+        android:hint="Email address"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputEditText4"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText3"
+        app:layout_constraintVertical_bias="0.517"
+        tools:layout_editor_absoluteX="69dp" />
+
     <TextView
         android:id="@+id/registerHeaderText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register Page"
-        android:textSize="32sp"
+        android:text="Create Account"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.117" />
+        app:layout_constraintVertical_bias="0.117"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/registBackToMainBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:text="Back to Main"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_margin="48dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/variant2"
+        android:text="SIGN UP"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/variant2"
+        android:padding="10dp"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree to the Teams & Conditions"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="565dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
